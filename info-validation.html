@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>信息确认</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/info-validation.css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/public.js"></script>
+	</head>
+	<body>
+		
+		<div class="validationPage">
+			<!-- 卡号信息 -->
+			<div class="cart-info info">
+				<h4>您此次申请的号卡信息 :</h4>
+				<div class="cart-info-con info-con">
+					<p class="info-item">
+						<label for="username">姓名:</label>
+						<input type="text" id="username" value="*彦祖" readonly="readonly">
+					</p>
+					<p class="info-item">
+						<label for="username">身份证号:</label>
+						<input type="text" id="id-cart" value="4****************1" readonly="readonly">
+					</p>
+					<p class="info-item">
+						<label for="username">新办理手机号码:</label>
+						<input type="text" id="new-phone" value="18888888888" readonly="readonly">
+					</p>
+					<p class="info-item">
+						<label for="username">套餐:</label>
+						<input type="text" id="package" value="七彩芝麻冰激凌套餐 99元档" readonly="readonly">
+					</p>
+				</div>
+			</div>
+			<!-- 卡号信息 -->
+			<div class="pay-info info">
+				<h4>支付信息 :</h4>
+				<div class="pay-info-con info-con">
+					<p class="info-item">
+						<label for="product-pev">商品预存:</label>
+						<input type="text" id="product-pev" value="￥200.00" readonly="readonly">
+					</p>
+					<p class="info-item">
+						<label for="recharge">首次充值:</label>
+						<input type="text" id="recharge" value="￥99.00" readonly="readonly">
+						<span class="pay-attention">首次充值成功后，得200元话费，可用两个月</span>
+					</p>
+					<p class="info-item">
+						<label for="freight">运费:</label>
+						<input type="text" id="freight" value="+0.00" readonly="readonly">
+					</p>
+					<p class="info-item">
+						<label for="credit"><i></i>芝麻信用免预存:</label>
+						<input type="text" id="credit" value="￥-200.00" readonly="readonly">
+					</p>
+					<p class="info-item">
+						<span class="total-pay">￥99.00</span>
+						<label for="username">应付总额:</label>
+					</p>
+				</div>
+			</div>
+			<!-- 协议 -->
+				<div class="agreement">
+					<p>我已阅读并同意上述协议及须知
+						<a href="javascript:;" onclick="$.serviceContract()">《中国联通客户入网服务协议》</a><br>
+						<a href="javascript:;" onclick="$.iceCream()">《云南七彩芝麻信用套餐促销活动协议》</a>
+					</p>
+				</div>
+			<!-- 下一步 -->
+			<div class="submit-btn">
+				<a class="next-step" id="submit" href="javascript:;">下一步</a>
+			</div>
+		</div>
+		<script src="js/agreement.js"></script>
+	</body>
+</html>

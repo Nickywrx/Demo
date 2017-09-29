@@ -1,0 +1,234 @@
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color: #bbb; opacity:1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color: #bbb;opacity:1;
+}
+
+input:-ms-input-placeholder{
+	color: #bbb;opacity:1;
+}
+
+input::-webkit-input-placeholder{
+	color: #bbb;opacity:1;
+}
+
+.infomation-page{
+	position: relative;
+}
+.infomation-page h4{
+	height: 0.77rem;
+	line-height: 0.77rem;
+	text-align: center;
+	font-size: 0.26rem;
+	color: #888;
+}
+.num-info{
+	background-color: #fff;
+}
+.num-info h3{
+	height: 0.85rem;
+	line-height: 0.85rem;
+	font-size: 0.3rem;
+	text-align: center;
+	border-bottom: 0.1px solid #53D7C9;
+	color: #53D7C9;
+	background-color: #fff;
+}
+.num-info .info-item{
+	height: 0.9rem;
+	line-height: 0.9rem;
+	border-bottom: 1px solid #EDEDED;
+	font-size: 0.26rem;
+	padding-left: 0.2rem;
+	color: #333;
+}
+.num-info .info-item span:nth-child(1){
+	display: inline-block;
+	width: 2.30rem;
+	font-size: 0.32rem;
+	color: #333;
+}
+.num-info .info-item i{
+	float: right;
+	width: 0.5rem;
+	text-align: right;
+	font-family: simsun;
+	font-weight: bold;
+	padding-right: 0.3rem;
+	color: #ccc;
+	font-size: 0.28rem;
+}
+.num-info .info-item input{
+	font-size: 0.3rem;
+	color: #888;
+	width: 4rem;
+}
+.contact-information{
+	margin-bottom: 1.1rem;
+}
+.contact-information h4{
+	height: 0.8rem;
+	line-height: 0.8rem;
+	text-align: left;
+	font-size: 0.26rem;
+	padding-left: 0.2rem;
+	color: #909090;
+	background-color: #f0f0f0;
+}
+.contact-information h4 span{
+	color: #f00;
+}
+.contact-information .details-address{
+	width: 4rem;
+}
+.submit-btn{
+	padding: 0 2.5%;
+}
+.submit-btn .next-step{
+	display: block;
+	width: 100%;
+	height: 0.84rem;
+	line-height: 0.84rem;
+	font-size: 0.34rem;
+	text-align: center;
+	color: #fff;
+	border-radius: 0.1rem;
+	background-color: #1BCFC6;
+}
+
+.phone-dialog{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.5);
+}
+.phone-dialog .dialog-con{
+	position: absolute;
+	width: 90%;
+	height: 5rem;
+	left: 5%;
+	top: 3rem;
+	background-color: #fff;
+}
+.dialog-con-head{
+	padding: 0.2rem 0rem 0rem 0.2rem;
+	overflow: hidden;
+}
+.dialog-con-head .search-text{
+	float: left;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	width: 77%;
+	padding-left: 0.2rem;
+	border: 1px solid #EDEDED;
+	border-right: none;
+	font-size: 0.3rem;
+}
+.dialog-con-head .search-btn{
+	float: left;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	text-align: center;
+	font-size: 0.3rem;
+	width: 20%;
+	background-color: #1BCFC6;
+	color: #fff;
+}
+.dialog-con-center{
+	padding: 0.4rem 0.8rem;
+	height: 4rem;
+}
+.dialog-con-center ul{
+	overflow: hidden;
+}
+.dialog-con-center ul li{
+	float: left;
+	width: 50%;
+	font-size: 0.32rem;
+	height: 0.7rem;
+	line-height: 0.7rem;
+	color: #333;
+}
+.dialog-con-center ul li.active{
+	color: #1BCFC6;
+}
+.dialog-con-center ul li:nth-child(2n){
+	text-align: right;
+}
+.dialog-con-footer{
+	height: 1rem;
+	width: 100%;
+	background-color: #fff;
+	border-top: 1px solid #EDEDED;
+	font-size: 0.32rem;
+}
+.dialog-con-footer a{
+	display: block;
+	height: 1rem;
+	line-height:1rem;
+	text-align: center;
+	color: #1BCFC6;
+}
+.close-btn{
+	position: absolute;
+	bottom: -2rem;
+	left: 50%;
+	width: 0.5rem;
+	height: 0.5rem;
+	line-height: 0.4rem;
+	margin-left: -0.25rem;
+	text-align: center;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	font-size: 0.3rem;
+	color: #fff;
+}
+
+.provinceDialog{
+	position: fixed;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+}
+
+.provinceDialog .provinceMask{
+	position: fixed;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.provinceBox{
+	width: 4.4rem;
+	font-size: 0.3rem;
+	color: #333;
+	position: fixed;
+	top:0;
+	bottom: 0;
+	right: 0;
+	background: #fff;
+}
+.provinceBox ul{
+	width: 2.2rem;
+	float: left;
+	height: 100%;
+	overflow-y: scroll;
+}
+
+.provinceBox ul li{
+	width: 100%;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+}
+.provinceBox ul li.active{
+	color: #1ccfc9;
+}

@@ -1,0 +1,108 @@
+html{
+    font-size: 100px;
+}
+/*样式清零*/
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,img,div,dl,dt,dd,input,span,a{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+    color: #111;
+    font-weight: normal;
+}
+
+body{
+    background-color: #F2F2F2;
+    font-family: "Microsoft Yahei", "微软雅黑", Arial, Helvetica, sans-serif, "宋体";
+}
+img{
+    border:none;
+    -webkit-touch-callout: none; /*禁止长按链接与图片弹出菜单*/
+}
+ul,ol{
+    list-style:none;
+}
+input,select,textarea{
+    font-family: "Microsoft Yahei", "微软雅黑", Arial, Helvetica, sans-serif, "宋体";
+    outline:none;
+}
+textarea{
+    resize:none;
+}
+a{
+    text-decoration:none;
+    -webkit-tap-highlight-color: transparent;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+/*清浮动*/
+.clearfix:after,.myTab:after,.myBtnBox:after,.searchBox:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.clearfix{
+    zoom:1;
+}
+i{
+	font-style: normal;
+}
+.hide{
+	display: none;
+}
+/*toast*/
+.toast {
+    position: fixed;
+    z-index: 11000;
+    background: #4B4B4B;
+    border-radius: 0.05rem;
+    color: white;
+    padding: 0.15rem 0.2rem;
+    max-width: 80%;
+    text-align: center;
+    font-size: 0.26rem;
+    width: auto;
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0) scale(1.185);
+    transform: translate3d(0, 0, 0) scale(1.185);
+    -webkit-transition-property: -webkit-transform, opacity;
+    transition-property: transform, opacity;
+}
+.toast.success{
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+.toast.warning{
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+.toast.info{
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+.toast.in{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    -webkit-transition-duration: 400ms;
+    transition-duration: 400ms;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+}
+ input{
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0); 
+        -webkit-user-select: none;
+        -moz-user-focus: none;
+        -moz-user-select: none;
+        -webkit-appearance:none;
+        outline: none;
+        border: none;
+}
+

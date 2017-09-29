@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>3G/4G卡</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/infomation.css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/public.js"></script>
+	</head>
+	<body>
+		<div class="infomation-page">
+			<h4>办理七彩云南芝麻套餐，您填写的信息，仅用于卡号办理</h4>
+			<div class="select-box num-info">
+				<h3>选号信息</h3>
+			<ul>
+				<li class="info-item">
+					<span>号码归属地</span><a class="pro-btn" href="javascript:;"><input class="address" id="num-address" value="" readonly="readonly"/><i class="pro-btn">></i></a>
+				</li>
+				<li class="info-item">
+					<span>新手机号</span><a class="num-sel" href="javascript:;"><input class="num-sel" id="new-phone" placeholder="AA号任选" readonly="readonly" /><i class="num-sel">></i></a>
+				</li>
+			</ul>
+			</div>
+			<!--填写收货联系方式-->
+			<div class="contact-information num-info">
+				<h4>填写收货联系方式 <span>(信息只用于卡号寄送)</span></h4>
+				<ul>
+					<li class="info-item">
+						<span>所在地区</span><a class="city-btn" href="javascript:;"><input class="address" id="use-address" value="" readonly="readonly" placeholder="请选择市+区/县"/><i class="city-btn">></i></a>
+					</li>
+					<li class="info-item">
+						<span>详情地址</span><input class="details-address" id="details-address" placeholder="请输入并精确到门号牌" />
+					</li>
+					<li class="info-item">
+						<span>常用手机号</span><input class="phone" id="use-phone" placeholder="请输入常用手机号" />
+					</li>
+				</ul>
+			</div>
+			<div class="submit-btn">
+				<a class="next-step" id="submit" href="javascript:;">下一步</a>
+			</div>
+		</div>
+		<!--phone-select弹框-->
+		<div class="phone-dialog hide">
+			<div class="dialog-con">
+				<div class="dialog-con-head">
+					<input type="text"  class="search-text" placeholder="尾号搜索" />
+					<a class="search-btn" href="javascript:;">搜索</a>
+				</div>
+				<div class="dialog-con-center">
+					<ul>
+						<li>15608792457</li>
+						<li>15608792457</li>
+						<li>15608792457</li>
+						<li>15608792457</li>
+						<li>15608792457</li>
+						<li>15608792457</li>
+						<li>15608792457</li>
+						<li>15608792457</li>
+						<li>15608792457</li>
+						<li>15608792457</li>
+					</ul>
+				</div>
+				<div class="dialog-con-footer">
+					<a href="javascript:;">换一批</a>
+				</div>
+			<a href="javascript:;" class="close-btn">&times;</a>
+			</div>
+		</div>
+
+		<script src="js/infomation.js"></script>
+	</body>
+	
+</html>
